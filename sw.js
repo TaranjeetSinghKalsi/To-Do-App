@@ -3,11 +3,11 @@ this.addEventListener("install", (event) => {
     event.waitUntil(
         caches.open(cacheData).then((cache) => {
             cache.addAll([
-                '/static/js/bundle.js',
-                '/index.html',
-                '/',
-                '/images/delete.svg',
-                '/images/tick.svg',
+                '%PUBLIC_URL%/static/js/bundle.js',
+                '%PUBLIC_URL%/index.html',
+                '%PUBLIC_URL%/',
+                '%PUBLIC_URL%/images/delete.svg',
+                '%PUBLIC_URL%/images/tick.svg',
             ])
         })
     )
