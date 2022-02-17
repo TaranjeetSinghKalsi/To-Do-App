@@ -3,11 +3,9 @@ this.addEventListener("install", (event) => {
     event.waitUntil(
         caches.open(cacheData).then((cache) => {
             cache.addAll([
-                'https://taranjeetsinghkalsi.github.io/To-Do-App/static/js/bundle.js',
-                'https://taranjeetsinghkalsi.github.io/To-Do-App/index.html',
-                'https://taranjeetsinghkalsi.github.io/To-Do-App/',
-                'https://taranjeetsinghkalsi.github.io/To-Do-App/images/delete.svg',
-                'https://taranjeetsinghkalsi.github.io/To-Do-App/images/tick.svg',
+                '/static/js/bundle.js',
+                '/index.html',
+                '/'
             ])
         })
     )
